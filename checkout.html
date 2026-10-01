@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Checkout — NovaMart</title><link rel="stylesheet" href="styles.css"></head>
+<body>
+<header class="site-header"><div class="container nav"><a class="logo" href="index.html">Nova<span>Mart</span></a><nav><a href="products.html">Shop</a></nav><div class="nav-actions"><a href="cart.html">Cart <span class="cart-count">0</span></a></div></div></header>
+<main class="section"><div class="container checkout-layout">
+<div><p class="eyebrow">SECURE CHECKOUT</p><h1>Complete your order</h1>
+<form id="checkout-form" class="form-card">
+<label>Full name<input id="name" required autocomplete="name"></label>
+<label>Email<input id="email" type="email" required autocomplete="email"></label>
+<label>Address<input id="address" required autocomplete="street-address"></label>
+<div class="form-row"><label>City<input id="city" required></label><label>Postal code<input id="postal" required></label></div>
+<label>Card number<input id="card" inputmode="numeric" placeholder="4242 4242 4242 4242" minlength="12" required></label>
+<button class="btn primary full" type="submit">Place order</button>
+<p class="fine-print">Demo store: never enter real payment details.</p>
+</form></div>
+<aside id="checkout-summary" class="summary-card"></aside>
+</div></main>
+<footer><div class="container footer-inner"><span>© 2026 NovaMart</span><span>Demo checkout</span></div></footer>
+<script src="app.js"></script><script>renderCheckout(); updateCartCount();</script>
+</body></html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NovaMart — Modern Essentials</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="container nav">
+    <a class="logo" href="index.html">Nova<span>Mart</span></a>
+    <nav>
+      <a class="active" href="index.html">Home</a>
+      <a href="products.html">Shop</a>
+      <a href="products.html?category=audio">Audio</a>
+      <a href="products.html?category=office">Office</a>
+    </nav>
+    <div class="nav-actions">
+      <a class="icon-link" href="login.html">Account</a>
+      <a class="cart-link" href="cart.html">Cart <span class="cart-count">0</span></a>
+    </div>
+  </div>
+</header>
+
+<main>
+<section class="hero">
+  <div class="container hero-grid">
+    <div>
+      <p class="eyebrow">SPRING COLLECTION</p>
+      <h1>Better gear for your everyday.</h1>
+      <p class="hero-copy">Thoughtfully selected tech and desk essentials designed to make work, travel, and downtime feel better.</p>
+      <div class="hero-actions">
+        <a class="btn primary" href="products.html">Shop collection</a>
+        <a class="btn secondary" href="products.html?category=office">Explore office</a>
+      </div>
+      <div class="trust-row">
+        <span>✓ Free shipping over $75</span>
+        <span>✓ 30-day returns</span>
+      </div>
+    </div>
+    <div class="hero-card">
+      <div class="hero-product">N</div>
+      <div class="hero-card-info">
+        <span>Featured</span>
+        <strong>Nova Headphones</strong>
+        <b>$129</b>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <div class="section-heading">
+      <div><p class="eyebrow">POPULAR NOW</p><h2>Customer favorites</h2></div>
+      <a href="products.html">View all →</a>
+    </div>
+    <div id="featured-products" class="product-grid"></div>
+  </div>
+</section>
+
+<section class="benefits">
+  <div class="container benefit-grid">
+    <div><strong>Fast, free delivery</strong><p>Free standard delivery on orders over $75.</p></div>
+    <div><strong>Simple returns</strong><p>Changed your mind? Return eligible items within 30 days.</p></div>
+    <div><strong>Secure checkout</strong><p>Your payment details are handled through a secure checkout flow.</p></div>
+  </div>
+</section>
+</main>
+
+<footer><div class="container footer-inner"><span>© 2026 NovaMart</span><span>Built as an SQA training store</span></div></footer>
+<script src="app.js"></script>
+<script>renderFeatured(); updateCartCount();</script>
+</body>
+</html>

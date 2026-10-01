@@ -1,0 +1,10 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Account — NovaMart</title><link rel="stylesheet" href="styles.css"></head>
+<body>
+<header class="site-header"><div class="container nav"><a class="logo" href="index.html">Nova<span>Mart</span></a><nav><a href="index.html">Home</a><a href="products.html">Shop</a></nav><div class="nav-actions"><a href="cart.html">Cart <span class="cart-count">0</span></a></div></div></header>
+<main class="section"><div class="container auth-wrap"><div class="auth-card"><p class="eyebrow">WELCOME BACK</p><h1>Sign in</h1><form id="login-form"><label>Email<input id="login-email" type="email" required></label><label>Password<input id="login-password" type="password" minlength="6" required></label><button class="btn primary full" type="submit">Sign in</button><p id="login-message" class="form-message"></p></form><p class="muted small">Demo account: any valid email and password with 6+ characters.</p></div></div></main>
+<footer><div class="container footer-inner"><span>© 2026 NovaMart</span><span>Demo account</span></div></footer>
+<script src="app.js"></script><script>initLogin(); updateCartCount();</script>
+</body></html>

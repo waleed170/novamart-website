@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shop — NovaMart</title><link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site-header"><div class="container nav">
+  <a class="logo" href="index.html">Nova<span>Mart</span></a>
+  <nav><a href="index.html">Home</a><a class="active" href="products.html">Shop</a><a href="products.html?category=audio">Audio</a><a href="products.html?category=office">Office</a></nav>
+  <div class="nav-actions"><a class="icon-link" href="login.html">Account</a><a class="cart-link" href="cart.html">Cart <span class="cart-count">0</span></a></div>
+</div></header>
+
+<main class="section"><div class="container">
+  <div class="shop-top"><div><p class="eyebrow">THE COLLECTION</p><h1>Shop all products</h1><p class="muted">Practical products, carefully chosen.</p></div></div>
+  <div class="shop-controls">
+    <input id="search" class="search" type="search" placeholder="Search products..." aria-label="Search products">
+    <select id="category" aria-label="Filter by category"><option value="all">All categories</option><option value="audio">Audio</option><option value="office">Office</option><option value="travel">Travel</option></select>
+    <select id="sort" aria-label="Sort products"><option value="featured">Featured</option><option value="low">Price: low to high</option><option value="high">Price: high to low</option><option value="rating">Top rated</option></select>
+  </div>
+  <p id="result-count" class="muted result-count"></p>
+  <div id="product-grid" class="product-grid"></div>
+</div></main>
+<footer><div class="container footer-inner"><span>© 2026 NovaMart</span><span>Built as an SQA training store</span></div></footer>
+<script src="app.js"></script><script>initProductsPage(); updateCartCount();</script>
+</body>
+</html>
